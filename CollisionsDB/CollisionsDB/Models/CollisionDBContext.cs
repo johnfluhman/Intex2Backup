@@ -12,8 +12,8 @@ namespace CollisionsDB.Models
         {
         }
 
-        public DbSet<Collision> Collisions { get; set; }
-        public DbSet<City> Cities { get; set; }
-        public DbSet<County> Counties { get; set; }
+        public DbSet<Collision> collisions { get; set; }
+        public DbSet<City> cities { get; set; }
+        public DbSet<County> counties { get; set; }
     }
 }

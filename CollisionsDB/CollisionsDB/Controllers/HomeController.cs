@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CollisionsDB.Models;
+using CollisionsDB.Models.ViewModels;
 using Microsoft.ML.OnnxRuntime;
 using Microsoft.ML.OnnxRuntime.Tensors;
 
@@ -39,6 +40,13 @@ namespace CollisionsDB.Controllers
 
     public class HomeController : Controller
     {
+        private ICollisionRepository repo { get; set; }
+
+        public HomeController (ICollisionRepository temp)
+        {
+            repo = temp;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -47,6 +55,32 @@ namespace CollisionsDB.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }     
+        }
+
+        [HttpGet]
+        public IActionResult Summary(int pageNum = 1)
+        {
+            int pageSize = 100;
+
+            var x = new CollisionsViewModel
+            {
+                Collisions = repo.Collisions
+                    //.Where(c => c.Category == category || category == null)
+                    .OrderBy(c => c.CRASH_SEVERITY_ID)
+                    .Skip((pageNum - 1) * pageSize)
+                    .Take(pageSize),
+
+                PageInfo = new PageInfo
+                {
+                    TotalNumCrashes =
+                        (repo.Collisions.Count()),
+                    CrashesPerPage = pageSize,
+                    CurrentPage = pageNum
+                }
+
+            };
+
+            return View(x);
+        }
     }
 }

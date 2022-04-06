@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using CollisionsDB.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.ML.OnnxRuntime;
 
 namespace CollisionsDB
 {
@@ -41,6 +42,10 @@ namespace CollisionsDB
 
             //services.AddIdentity<IdentityUser, IdentityRole>()
             //    .AddEntityFrameworkStores<AppIdentityDBContext>();
+
+            services.AddSingleton<InferenceSession>(
+                new InferenceSession("Models/trained_model_hgboost.onnx")
+                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

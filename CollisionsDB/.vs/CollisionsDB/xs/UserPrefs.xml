@@ -1,34 +1,18 @@
 ﻿<Properties StartupConfiguration="{4A98F9AD-3BB9-444C-82A3-E760D0131DA5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CollisionsDB/Views/Shared/_Layout.cshtml">
-    <Files>
-      <File FileName="CollisionsDB/Models/EFCollisionRepository.cs" Line="9" Column="1" />
-      <File FileName="CollisionsDB/Models/ICollisionRepository.cs" Line="6" Column="42" />
-      <File FileName="CollisionsDB/Startup.cs" Line="43" Column="69" />
-      <File FileName="CollisionsDB/Models/AppIdentityDBContext.cs" Line="8" Column="63" />
-      <File FileName="CollisionsDB/Program.cs" Line="10" Column="23" />
-      <File FileName="CollisionsDB/Views/Home/Privacy.cshtml" Line="11" Column="7" />
-      <File FileName="CollisionsDB/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="CollisionsDB/Views/Home/Details.cshtml" Line="1" Column="1" />
-      <File FileName="CollisionsDB/Views/Home/Summary.cshtml" Line="1" Column="1" />
-      <File FileName="CollisionsDB/Views/Home/Calculator.cshtml" Line="1" Column="1" />
-      <File FileName="CollisionsDB/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CollisionsDB" expanded="True">
             <Node name="CollisionsDB" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Privacy.cshtml" selected="True" />
-                </Node>
-                <Node name="Shared" expanded="True" />
+              <Node name="Infrastructure" expanded="True">
+                <Node name="PaginationTagHelper.cs" selected="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="ViewModels" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>

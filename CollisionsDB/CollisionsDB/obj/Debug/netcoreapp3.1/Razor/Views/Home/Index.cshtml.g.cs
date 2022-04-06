@@ -26,8 +26,15 @@ using CollisionsDB.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/johnfluhman/Documents/GitHub/Intex2Backup/CollisionsDB/CollisionsDB/Views/_ViewImports.cshtml"
+using CollisionsDB.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a5837acca078fca5878547e48a3faf92115de149", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"67fc8f99456a972bf5d1cd92aa98dad738cab006", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1e4d8148acebab10c0a0180767accf280ca31892", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

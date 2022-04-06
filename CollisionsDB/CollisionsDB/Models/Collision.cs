@@ -86,11 +86,11 @@ namespace CollisionsDB.Models
 
         //Foreign Key Relationships
         [Required(ErrorMessage = "Please enter the City the crash occurred in")]
-        public int CityId { get; set; }
+        public int CITY_ID { get; set; }
         public City City { get; set; }
 
         [Required(ErrorMessage = "Please enter the County the crash occurred in")]
-        public int CountyId { get; set; }
+        public int COUNTY_ID { get; set; }
         public County County { get; set; }
     }
 }

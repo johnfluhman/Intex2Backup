@@ -6,7 +6,7 @@ namespace CollisionsDB.Models
     public class City
     {
         [Key, Required]
-        public int CityId { get; set; }
+        public int CITY_ID { get; set; }
         [Required]
         public string CityName { get; set; }
     }
